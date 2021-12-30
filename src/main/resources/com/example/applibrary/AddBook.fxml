@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applibrary.AddBook">
+   <children>
+      <Pane prefHeight="55.0" prefWidth="600.0" styleClass="login-bg" stylesheets="@../../../styles.css">
+         <children>
+            <ImageView fx:id="icon" fitHeight="55.0" fitWidth="85.0" layoutX="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/img/logo121.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="txtBookName" layoutX="59.0" layoutY="112.0" promptText="Buch" />
+      <Label layoutX="240.0" layoutY="66.0" text="Buch hinzufügen">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonBuy" layoutX="245.0" layoutY="324.0" mnemonicParsing="false" onAction="#addBook" prefHeight="17.0" prefWidth="110.0" styleClass="ripple-button" stylesheets="@../../../styles.css" text="Hinzufügen">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="74.0" layoutY="296.0" prefHeight="26.0" prefWidth="450.0" textFill="RED">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabelMoney" alignment="CENTER" layoutX="89.0" layoutY="365.0" prefHeight="26.0" prefWidth="450.0" textFill="#00a405">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAuthor" layoutX="59.0" layoutY="179.0" promptText="Autor" />
+      <TextField fx:id="txtDate" layoutX="341.0" layoutY="112.0" promptText="Veröffentlichungsdatum" />
+      <TextField fx:id="txtSellCost" layoutX="341.0" layoutY="179.0" promptText="Verkaufspreis" />
+      <TextField fx:id="txtRentCost" layoutX="341.0" layoutY="248.0" promptText="Mietprice" />
+      <TextField fx:id="txtAmount" layoutX="59.0" layoutY="248.0" promptText="Anzahl" />
+   </children>
+</AnchorPane>

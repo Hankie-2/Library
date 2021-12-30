@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" styleClass="login-bg" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applibrary.registration">
+   <children>
+      <AnchorPane layoutX="36.0" layoutY="31.0" prefHeight="440.0" prefWidth="486.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="field_name" layoutX="43.0" layoutY="58.0" prefHeight="13.0" prefWidth="400.0" style="-fx-background-color: white;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="field_surname" layoutX="43.0" layoutY="132.0" prefHeight="13.0" prefWidth="400.0" style="-fx-background-color: white;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="field_username" layoutX="39.0" layoutY="203.0" prefHeight="13.0" prefWidth="400.0" style="-fx-background-color: white;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <PasswordField fx:id="field_password" layoutX="40.0" layoutY="278.0" prefHeight="26.0" prefWidth="400.0" style="-fx-background-color: white;" />
+            <PasswordField fx:id="field_confirmPassword" layoutX="44.0" layoutY="351.0" prefHeight="26.0" prefWidth="400.0" style="-fx-background-color: white;" />
+            <Button fx:id="btn_enter" layoutX="43.0" layoutY="399.0" mnemonicParsing="false" onAction="#enterButtonOnAction" prefHeight="26.0" prefWidth="400.0" stylesheets="@../../../styles.css" text="Speichern" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="ripple-button" />
+                  <String fx:value="button-style" />
+               </styleClass></Button>
+            <Label layoutX="48.0" layoutY="32.0" text="Name">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="325.0" text="Kennwort bestätigen" textFill="#101010">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="252.0" text="Kennwort">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="177.0" text="Benutzer name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="106.0" text="Vorname" textFill="#050505">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Line endX="289.39996337890625" endY="-1.52587890625E-5" layoutX="142.0" layoutY="85.0" startX="-100.0" />
+            <Line endX="289.39996337890625" endY="-1.52587890625E-5" layoutX="143.0" layoutY="157.0" startX="-99.00001525878906" startY="-1.52587890625E-5" />
+            <Line endX="289.39996337890625" endY="-1.52587890625E-5" layoutX="146.0" layoutY="228.0" startX="-100.0" />
+            <Line endX="289.39996337890625" endY="-1.52587890625E-5" layoutX="150.0" layoutY="304.0" startX="-100.0" />
+            <Line endX="289.39996337890625" endY="-1.52587890625E-5" layoutX="146.0" layoutY="377.0" startX="-100.0" />
+            <Label fx:id="registrationMessageLabel" alignment="CENTER" layoutX="-1.0" layoutY="14.0" prefHeight="18.0" prefWidth="486.0" textFill="#11691a">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="confirmPasswordLabel" alignment="CENTER" layoutX="180.0" layoutY="328.0" prefHeight="18.0" prefWidth="263.0" textFill="RED">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font></Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect></AnchorPane>
+      <Button fx:id="btn_back" layoutX="901.0" layoutY="461.0" mnemonicParsing="false" onAction="#buttonBackOnAction" prefHeight="26.0" prefWidth="89.0" stylesheets="@../../../styles.css" text="Zurück" textFill="WHITE">
+         <styleClass>
+            <String fx:value="ripple-button" />
+            <String fx:value="button-style" />
+         </styleClass></Button>
+      <Label layoutX="845.0" layoutY="78.0" text="Benutzer Registration" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="92.0" fitWidth="128.0" layoutX="866.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/img/logo121.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="642.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Das einzige was ihr unbedingt wissen müssen, ist einer Standort der Bibliothek" wrappingWidth="299.7808837890625">
+         <font>
+            <Font name="Segoe UI Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="840.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Albert Einstein" underline="true">
+         <font>
+            <Font name="Segoe UI Italic" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
